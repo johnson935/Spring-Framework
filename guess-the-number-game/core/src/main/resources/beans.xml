@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- <context:annotation-config/> -->
+    <context:component-scan base-package="com.johnson"/>
+
+   <!-- <bean id="numberGenerator" class="com.johnson.NumberGeneratorImpl"/>
+    <bean id="game" class="com.johnson.GameImpl" init-method="reset"> -->
+        <!-- constructor dependency injection -->
+       <!-- <constructor-arg ref="numberGenerator"/> -->
+        <!-- setter based dependency injection name is the name of the property in class
+         ref is the reference to the other bean id sets the property to the bean-->
+        <!--<property name="numberGenerator" ref="numberGenerator"/> -->
+        <!--</bean> -->
+    <!-- Allows the use of common annotations like postconstruct and predestroy -->
+    <!--<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/> -->
+</beans>

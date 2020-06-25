@@ -1,0 +1,9 @@
+com\johnson\util\thymeleaf\DecoupledLogicSetup.class
+com\johnson\util\ViewNames.class
+com\johnson\service\GameServiceImpl.class
+com\johnson\util\GameMappings.class
+com\johnson\WebMain.class
+com\johnson\config\WebConfig.class
+com\johnson\service\GameService.class
+com\johnson\util\AttributeNames.class
+com\johnson\controller\GameController.class
