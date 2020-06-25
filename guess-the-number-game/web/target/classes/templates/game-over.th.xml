@@ -1,7 +1,11 @@
 <thlogic>
     <attr sel="#headId" th:replace="~{fragments/head :: headFragment}"></attr>
-    <attr sel="#home-link" th:href="@{__${T(com.johnson.util.GameMappings).HOME}__}"/>
+    <attr sel="#game-title" th:text="#{game.title}"/>
+    <attr sel="#game-over" th:text="#{game.over}"/>
+    <attr sel="#home-link" th:href="@{__${T(com.johnson.util.GameMappings).HOME}__}"
+    th:text="#{game.home}"/>
     <attr sel="#result-message" th:text="${__${T(com.johnson.util.AttributeNames).RESULT_MESSAGE}__}"/>
-    <attr sel="#restart-link" th:href="@{__${T(com.johnson.util.GameMappings).RESTART}__}"/>
+    <attr sel="#restart-link" th:href="@{__${T(com.johnson.util.GameMappings).RESTART}__}"
+    th:text="#{game.play}"/>
     <attr sel="#footerId" th:replace="~{fragments/footer :: footer}"/>
 </thlogic>
